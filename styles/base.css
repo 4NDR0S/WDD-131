@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    background-color: #f0f0f0;
+    padding: 0;
+    text-align: center;
+    color: #f0f0f0;
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+}
+
+h1, h2 {
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+}
+
+footer {
+    background-color: #1d4d72;
+    padding: .5rem 0;
+}
+
+#course-title {
+    background-color: #1d4d72;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+    font-size: larger;
+}
+
+nav {
+    background: #050505;
+    padding: 1rem 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+main {
+    padding: 2rem;
+}
+
+/* MAIN THEMES */
+main {
+    padding: 2rem 20%;
+    background-color: #f5f5f5;
+    color: #000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main.dark {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.aaa {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* THEME SWITCH (DONGLE) */
+.theme-switch {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.switch {
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.switch .icon {
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+
+/* ESTADO OSCURO SWITCH */
+.switch.dark {
+    background-color: #333;
+}
+
+.switch.dark .icon {
+    transform: translateX(30px);
+}
+
+
+
+
+.card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-me {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-me {
+    padding: 1rem;
+}
+
+#lastModified {
+    color: rgb(198, 238, 22);
+}
