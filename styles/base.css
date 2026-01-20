@@ -1,10 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap');
+/* ================================
+   GLOBAL
+================================ */
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
+
+/* ================================
+   HEADER & FOOTER
+================================ */
 
 header,
 footer {
@@ -15,14 +21,14 @@ footer {
     font-family: "Atkinson Hyperlegible Mono", sans-serif;
 }
 
-h1, h2 {
-    font-family: "Atkinson Hyperlegible Mono", sans-serif;
-}
-
 footer {
     background-color: #1d4d72;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
 }
+
+/* ================================
+   HEADER
+================================ */
 
 #course-title {
     background-color: #1d4d72;
@@ -31,6 +37,20 @@ footer {
     width: 100%;
     font-size: larger;
 }
+
+.course-title-text {
+    color: #ffffff;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* ================================
+   NAVIGATION
+================================ */
 
 nav {
     background: #050505;
@@ -43,47 +63,42 @@ nav a {
     color: #f0f0f0;
 }
 
-header>div {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
 #hamburger {
-  padding: 0 2rem;
-  font-size: xx-large;
-  background-color: #ffffff08;
-  border: none;
+    padding: 0 2rem;
+    font-size: xx-large;
+    background-color: #ffffff08;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
 }
 
 #nav-menu {
-  display: none;
-  flex-direction: column;
-  text-align: center;
-  width: 100%;
-  font-size: larger;
-  margin-top: 0.5rem;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    font-size: larger;
+    margin-top: 0.5rem;
 }
 
 #nav-menu a {
-  color: #fff;
-  text-decoration: none;
-  margin: .5rem 0;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0.5rem 0;
 }
 
 #nav-menu.open {
-  display: flex;
+    display: flex;
 }
 
-main {
-    padding: 2rem;
-}
+/* ================================
+   MAIN
+================================ */
 
-/* MAIN THEMES */
 main {
     padding: 2rem 20%;
     background-color: #f5f5f5;
-    color: #000;
+    color: #000000;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -92,23 +107,30 @@ main.dark {
     color: #ffffff;
 }
 
-.aaa {
-
-    display: flex;
-    justify-content: space-between;
+h1,
+h2 {
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
 }
 
-/* THEME SWITCH (DONGLE) */
+.aaa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ================================
+   THEME SWITCH
+================================ */
+
 .theme-switch {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
 }
 
 .switch {
     width: 60px;
     height: 30px;
-    background-color: #ccc;
+    background-color: #cccccc;
     border-radius: 30px;
     position: relative;
     cursor: pointer;
@@ -118,7 +140,7 @@ main.dark {
 .switch .icon {
     width: 26px;
     height: 26px;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 50%;
     position: absolute;
     top: 2px;
@@ -130,21 +152,20 @@ main.dark {
     transition: transform 0.3s ease;
 }
 
-
-/* ESTADO OSCURO SWITCH */
 .switch.dark {
-    background-color: #333;
+    background-color: #333333;
 }
 
 .switch.dark .icon {
     transform: translateX(30px);
 }
 
-
-
+/* ================================
+   CARDS
+================================ */
 
 .card {
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     padding: 1rem;
     margin-bottom: 1rem;
 }
@@ -152,12 +173,46 @@ main.dark {
 .card-me {
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 .img-me {
     padding: 1rem;
 }
 
+/* ================================
+   FOOTER
+================================ */
+
 #lastModified {
     color: rgb(198, 238, 22);
+}
+
+/* ================================
+   RESPONSIVE (LARGER)
+================================ */
+
+@media screen and (min-width: 768px) {
+
+    #hamburger {
+        display: none;
+    }
+
+    #nav-menu {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin-top: 0;
+        gap: 3rem;
+    }
+
+    #nav-menu a {
+        padding: 0 0.5rem;
+    }
+
+    nav {
+        padding: 1rem 20%;
+        display: flex;
+        justify-content: space-between;
+    }
 }
