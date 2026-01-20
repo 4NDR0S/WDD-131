@@ -8,39 +8,37 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding: 1rem;
   background: #333;
   color: #fff;
 }
 
-/* contenedor del título + botón */
-header>div {
+header > div {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  align-items: center;
 }
 
 #hamburger {
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   font-size: xx-large;
-  background-color: #ffffff08;
+  background-color: transparent;
   border: none;
+  color: #fff;
+  cursor: pointer;
 }
 
 #nav-menu {
   display: none;
   flex-direction: column;
   text-align: center;
-  width: 100%;
-  font-size: larger;
   margin-top: 0.5rem;
 }
 
 #nav-menu a {
   color: #fff;
   text-decoration: none;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 
 #nav-menu.open {
@@ -50,12 +48,10 @@ header>div {
 .visually-hidden {
   position: absolute;
   left: -10000px;
-  top: auto;
   width: 1px;
   height: 1px;
   overflow: hidden;
 }
-
 
 .container {
   display: grid;
@@ -66,19 +62,18 @@ header>div {
 
 figure {
   margin: 0;
-  border: solid;
-  border-color: #333;
+  border: 1px solid #333;
   background-color: #fff;
 }
 
 figure:hover {
-  box-shadow: 0 0 50px #333;
+  box-shadow: 0 0 20px #333;
 }
 
 img {
-  height: 250px;
   width: 100%;
-  max-height: 500px;
+  height: auto;
+  display: block;
 }
 
 figcaption {
@@ -89,7 +84,6 @@ figcaption {
 
 footer {
   text-align: center;
-  margin-top: 1rem;
   padding: 1rem;
   background: #333;
   color: #fff;

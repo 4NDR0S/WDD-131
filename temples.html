@@ -8,8 +8,11 @@
     <meta name="description"
         content="A responsive photo album showcasing temples from around the world, built with HTML, CSS, and JavaScript.">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
+
+    <!-- JS -->
     <script defer src="scripts/temples.js"></script>
 </head>
 
@@ -17,10 +20,10 @@
     <header>
         <div>
             <h1>Temple Album</h1>
-            <button id="hamburger">☰</button>
+            <button id="hamburger" aria-label="Open navigation menu">☰</button>
         </div>
         <nav id="nav-menu">
-            <a href="#">Home</a>
+            <a href="/index.html">Home</a>
             <a href="#">Old</a>
             <a href="#">New</a>
             <a href="#">Large</a>
@@ -30,60 +33,74 @@
 
     <main>
         <h2 class="visually-hidden">Temple Photo Gallery</h2>
+
         <section class="container">
+
             <figure>
-                <img src="images/rome_italy_temple.webp" alt="Rome Italy Temple exterior view">
+                <img src="images/rome_italy_temple.webp" srcset="images/rome_italy_temple.webp 800w,
+                        images/rome_italy_temple.webp 400w" sizes="(max-width: 768px) 100vw, 33vw" width="800"
+                    height="533" alt="Rome Italy Temple exterior view" fetchpriority="high">
                 <figcaption>Rome Italy Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/lima_peru_los_olivos_temple_exterior.webp" alt="Lima Peru Los Olivos Temple exterior view">
+                <img src="images/lima_peru_los_olivos_temple_exterior.webp" srcset="images/lima_peru_los_olivos_temple_exterior.webp 800w,
+                        images/lima_peru_los_olivos_temple_exterior.webp 400w" sizes="(max-width: 768px) 100vw, 33vw"
+                    width="800" height="533" alt="Lima Peru Los Olivos Temple exterior view" loading="lazy">
                 <figcaption>Lima Peru Los Olivos Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/trujillo_peru_temple_exterior.webp" alt="Trujillo Peru Temple exterior view">
+                <img src="images/trujillo_peru_temple_exterior.webp" srcset="images/trujillo_peru_temple_exterior.webp 800w,
+                        images/trujillo_peru_temple_exterior.webp 400w" sizes="(max-width: 768px) 100vw, 33vw"
+                    width="800" height="533" alt="Trujillo Peru Temple exterior view" loading="lazy">
                 <figcaption>Trujillo Peru Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/abuquerque_temple_lds.webp" alt="Albuquerque New Mexico Temple exterior view">
+                <img src="images/abuquerque_temple_lds.webp" srcset="images/abuquerque_temple_lds.webp 800w,
+                        images/abuquerque_temple_lds.webp 400w" sizes="(max-width: 768px) 100vw, 33vw" width="800"
+                    height="533" alt="Albuquerque New Mexico Temple exterior view" loading="lazy">
                 <figcaption>Albuquerque New Mexico Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/barranquilla_columbia_temple_exterior.webp" alt="Barranquilla Colombia Temple exterior view">
+                <img src="images/barranquilla_columbia_temple_exterior.webp" srcset="images/barranquilla_columbia_temple_exterior.webp 800w,
+                        images/barranquilla_columbia_temple_exterior.webp 400w" sizes="(max-width: 768px) 100vw, 33vw"
+                    width="800" height="533" alt="Barranquilla Colombia Temple exterior view" loading="lazy">
                 <figcaption>Barranquilla Colombia Temple</figcaption>
             </figure>
 
+            <!-- DUPLICADOS -->
             <figure>
-                <img src="images/rome_italy_temple.webp" alt="Rome Italy Temple exterior view">
+                <img src="images/rome_italy_temple.webp" srcset="images/rome_italy_temple.webp 800w,
+                        images/rome_italy_temple.webp 400w" sizes="(max-width: 768px) 100vw, 33vw" width="800"
+                    height="533" alt="Rome Italy Temple exterior view" fetchpriority="high">
                 <figcaption>Rome Italy Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/lima_peru_los_olivos_temple_exterior.webp" alt="Lima Peru Los Olivos Temple exterior view">
+                <img src="images/lima_peru_los_olivos_temple_exterior.webp" srcset="images/lima_peru_los_olivos_temple_exterior.webp 800w,
+                        images/lima_peru_los_olivos_temple_exterior.webp 400w" sizes="(max-width: 768px) 100vw, 33vw"
+                    width="800" height="533" alt="Lima Peru Los Olivos Temple exterior view" loading="lazy">
                 <figcaption>Lima Peru Los Olivos Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/trujillo_peru_temple_exterior.webp" alt="Trujillo Peru Temple exterior view">
+                <img src="images/trujillo_peru_temple_exterior.webp" srcset="images/trujillo_peru_temple_exterior.webp 800w,
+                        images/trujillo_peru_temple_exterior.webp 400w" sizes="(max-width: 768px) 100vw, 33vw"
+                    width="800" height="533" alt="Trujillo Peru Temple exterior view" loading="lazy">
                 <figcaption>Trujillo Peru Temple</figcaption>
             </figure>
 
             <figure>
-                <img src="images/abuquerque_temple_lds.webp" alt="Albuquerque New Mexico Temple exterior view">
+                <img src="images/abuquerque_temple_lds.webp" srcset="images/abuquerque_temple_lds.webp 800w,
+                        images/abuquerque_temple_lds.webp 400w" sizes="(max-width: 768px) 100vw, 33vw" width="800"
+                    height="533" alt="Albuquerque New Mexico Temple exterior view" loading="lazy">
                 <figcaption>Albuquerque New Mexico Temple</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/barranquilla_columbia_temple_exterior.webp" alt="Barranquilla Colombia Temple exterior view">
-                <figcaption>Barranquilla Colombia Temple</figcaption>
             </figure>
 
         </section>
-
-
     </main>
 
     <footer>

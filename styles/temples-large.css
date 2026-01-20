@@ -6,10 +6,6 @@
     justify-content: space-between;
   }
 
-  header > div {
-    width: auto;
-  }
-
   #hamburger {
     display: none;
   }
@@ -17,22 +13,10 @@
   #nav-menu {
     display: flex;
     flex-direction: row;
-    width: auto;
-    margin-top: 0;
     gap: 3rem;
-  }
-
-  #nav-menu a {
-    padding: 0 0.5rem;
   }
 
   .container {
     grid-template-columns: repeat(3, 1fr);
   }
-
-  img {
-  height: auto;
-  width: 100%;
-  max-height: 500px;
-}
 }
