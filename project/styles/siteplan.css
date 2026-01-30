@@ -1,0 +1,58 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #eeeeee;
+  color: #1c1c1c;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #c9a24d;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+pre {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-left: 4px solid #c9a24d;
+  overflow-x: auto;
+}
+
+/* ---------- Wireframe Images ---------- */
+
+section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+/* ---------- Wireframe Section Layout ---------- */
+
+section h3 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* ---------- Desktop Enhancement ---------- */
+@media (min-width: 768px) {
+  section img {
+    max-width: 80%;
+  }
+}
+
