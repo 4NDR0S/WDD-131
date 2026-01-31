@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #eee;
+  margin: 0;
+}
+
+header, footer {
+  background: #1d4d72;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  max-width: 500px;
+  background: white;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+
+label, legend {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: .5rem;
+  margin-top: .3rem;
+}
+
+fieldset, select, #installDate {
+  margin-bottom: 3rem;
+}
+
+fieldset label {
+  display: inline-block;
+  margin-right: .5rem;
+}
+
+input[type="submit"] {
+  margin-top: 1.5rem;
+  background: #1d4d72;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: x-large;
+}
+
+.confirmation {
+  text-align: center;
+}
