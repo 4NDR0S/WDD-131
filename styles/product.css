@@ -54,3 +54,16 @@ input[type="submit"] {
 .confirmation {
   text-align: center;
 }
+
+
+@media (max-width: 600px) {
+  main {
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+
+  fieldset label {
+    display: block;
+    margin-top: 0.5rem;
+  }
+}
